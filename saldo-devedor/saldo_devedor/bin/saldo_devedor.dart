@@ -1,4 +1,4 @@
-import 'package:saldo_devedor/saldo_devedor.dart' as saldo_devedor;
+
 
 void main() {
   int totalDeParcelas = 60;
@@ -7,9 +7,11 @@ void main() {
 
   double valorTotal = valorDasPacelas * totalDeParcelas;
   String valorTotalString = valorTotal.toStringAsFixed(2);
-  double saldoDevedor = (parcelasPagas * valorDasPacelas) - ( valorTotal);
-  String saldoDevedorString = saldoDevedor.toStringAsFixed(2);
-  print(saldoDevedor);
+
+  double saldoDevedor = ((parcelasPagas * valorDasPacelas) - valorTotal);
+  double saldo = saldoDevedor * -1;
+  String saldoDevedorString = saldo.toStringAsFixed(2);
+
 
   print(
       "Valor total da Consorsio: RS $valorTotalString\nSaldo devedor: RS $saldoDevedorString");
