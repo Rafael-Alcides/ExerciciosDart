@@ -7,5 +7,6 @@ void main() {
 
   double valorFinal = valorInicial - desconto;
 
-  print("Preço do Produto: $valorInicial \nDesconto de 10%: $desconto\nPreço do produto com desconto: $valorFinal");
+  print(
+      "Preço do Produto: R\$ ${valorInicial.toStringAsFixed(2)} \nDesconto de 10%: R\$ ${desconto.toStringAsFixed(2)}\nPreço do produto com desconto: ${valorFinal.toStringAsFixed(2)}");
 }

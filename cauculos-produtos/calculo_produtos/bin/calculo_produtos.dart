@@ -1,14 +1,14 @@
 import 'package:calculo_produtos/calculo_produtos.dart' as calculo_produtos;
 
 void main() {
-  int numero1 = 2;
-  int numero2 = 3;
-  int numero3 = 8;
-  int numero4 = 5;
+  num numero1 = 2;
+  num numero2 = 3;
+  num numero3 = 8;
+  num numero4 = 5;
 
-  int calculoproduto1 = numero1 * numero2;
-  int calculoproduto2 = numero3 * numero4;
-  int resultCalculo = calculoproduto1 + calculoproduto2;
+  num calculoproduto1 = numero1 * numero2;
+  num calculoproduto2 = numero3 * numero4;
+  num resultCalculo = calculoproduto1 + calculoproduto2;
 
   print("O resultada do Calculo do Produto e $resultCalculo");
 }
